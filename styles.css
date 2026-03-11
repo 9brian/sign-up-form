@@ -1,0 +1,90 @@
+/* Reset default margin and padding for all elements*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#createBtn {
+    background-color: rgb(74, 50, 40);
+    color: white;
+}
+
+/* Container div holds sidebar & main-page */
+#container {
+    display: flex; 
+    /* Place sidebar & main-page side by side*/
+    height: 100vh;
+}
+
+/* Sidebar div */
+#sidebar {
+    width: 40%; /* have 40% of container div */
+    /* position: relative; */
+}
+
+#image-wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+#trees-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#banner {
+    display: flex;
+    top: 30%; /* 30% from the top of image-wrapper */
+    background-color: rgba(0,0,0,0.5); 
+    width: 100%; /* banner takes on the width of the image */
+    position: absolute; /* place banner on top of image */
+    align-items: center; /* Center (top-bottom) */
+    justify-content: center; /* Center the contents to the banner */
+    font-size: 3rem;
+}
+
+#banner img {
+    height: auto;
+    width: 15%; /* width of banner */
+}
+
+#img-footer{
+    position: absolute;
+    top: 95%;
+    /* justify-content: center; */
+    left: 25%; 
+    display: flex;
+}
+
+#img-footer a {
+    color: white;
+}
+
+/* Main-page div */
+#main-page {
+    flex: 1; /* Fill in the rest of container div */
+
+    display: flex;
+    flex-direction: column;
+    border: 4px solid yellow;
+    /* justify-content: center; */
+    padding-top: 15%;
+}
+
+#introduction {
+    border: 4px solid red;
+    font-size: 1.5rem;
+    background-color: gainsboro;
+    top: 20%;
+}
+
+#form-container {
+    border: 4px solid green;
+}
+
+#account-confirmation {
+    border: 4px solid blue;
+}
